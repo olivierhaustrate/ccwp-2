@@ -19,5 +19,3 @@ medias
 
 config/*
 !config/sample-config.php
-
-.htaccess
