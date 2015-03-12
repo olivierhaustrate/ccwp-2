@@ -12,8 +12,7 @@ web/apps/plugins/*
 
 web/apps/mu-plugins/*
 !web/apps/mu-plugins/register-theme-directory.php
-!web/apps/mu-plugins/bedrock-autoloader.php
-!web/apps/mu-plugins/custom-functions
+!web/apps/mu-plugins/site-custom-functions.php
 
 medias
 

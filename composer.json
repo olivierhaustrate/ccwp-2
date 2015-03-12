@@ -50,7 +50,7 @@
 	},
 	"extra"       : {
 		"installer-paths": {
-			"web/apps/mu-plugins/{$name}/" : ["type:wordpress-muplugin","roots/wp-h5bp-htaccess"],
+			"web/apps/mu-plugins/{$name}/" : ["type:wordpress-muplugin"],
 			"web/apps/plugins/{$name}/" : ["type:wordpress-plugin"],
 			"web/apps/themes/{$name}/"  : ["type:wordpress-theme"]
 		},
