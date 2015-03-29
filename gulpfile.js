@@ -67,14 +67,12 @@ gulp.task('scss', function() {
     .pipe(sourcemaps.init())
     .pipe( sass() )
     .pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
-    .pipe(size({"showFiles":true}))
     .pipe(sourcemaps.write(themeRoot + '.'))
     .pipe( gulp.dest(themeRoot + '.' ) )
     // Normal done, time to do minified (style.min.css)
     // remove the following 3 lines if you don't want it
     .pipe( minifycss() )
     .pipe( rename( { suffix: '.min' } ) )
-    .pipe( size({"showFiles":true}))
     .pipe( gulp.dest(themeRoot + '.' ) )
     .pipe( livereload() );
 });
