@@ -22,7 +22,7 @@ var gulp = require( 'gulp' ),
 // configured in ./.bowerrc or to ./bower_components when no .bowerrc could be found.
 gulp.task('bower', function() {
   return bower()
-    .pipe(gulp.dest('lib/'))
+    .pipe(gulp.dest(themeRoot + 'lib/'))
 });
 
 
