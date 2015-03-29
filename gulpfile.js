@@ -14,9 +14,18 @@ var gulp = require( 'gulp' ),
   sourcemaps = require('gulp-sourcemaps'),
   gutil = require('gulp-util'),
   autoprefixer = require('gulp-autoprefixer'),
-  themeRoot = './web/apps/themes/themename',
+  bower = require('gulp-bower'),
+  themeRoot = './web/apps/themes/themename';
 
- 
+
+// Run bower.json and install files in the directory 
+// configured in ./.bowerrc or to ./bower_components when no .bowerrc could be found.
+gulp.task('bower', function() {
+  return bower()
+    .pipe(gulp.dest('lib/'))
+});
+
+
 // Default error handler
 var onError = function( err ) {
   console.log( 'An error occured:', err.message );
