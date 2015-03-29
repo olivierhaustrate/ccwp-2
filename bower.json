@@ -1,0 +1,23 @@
+{
+  "name": "themename",
+  "version": "1.0.0",
+  "authors": [
+    "olivier haustrate"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.2",
+    "modernizr": "~2.8.3",
+    "breakpoint-sass": "~2.5.0"
+  }
+}
