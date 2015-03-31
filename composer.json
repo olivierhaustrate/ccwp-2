@@ -44,8 +44,7 @@
 		"composer/installers"                         	    	   	: "v1.0.19",
 		
 		"koodimonni/composer-dropin-installer"					    : "*",
-		"roots/wp-h5bp-htaccess"									: "1.1.0",
-				
+						
 		"julianlmedina/modernscores"                 			    : "*"		
 	},
 	"extra"       : {
