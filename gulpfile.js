@@ -14,16 +14,8 @@ var gulp = require( 'gulp' ),
   sourcemaps = require('gulp-sourcemaps'),
   gutil = require('gulp-util'),
   autoprefixer = require('gulp-autoprefixer'),
-  bower = require('gulp-bower'),
   themeRoot = './web/apps/themes/themename';
 
-
-// Run bower.json and install files in the directory 
-// configured in ./.bowerrc or to ./bower_components when no .bowerrc could be found.
-gulp.task('bower', function() {
-  return bower()
-    .pipe(gulp.dest(themeRoot + 'lib/'))
-});
 
 
 // Default error handler
@@ -66,6 +58,8 @@ gulp.task('scss', function() {
     .pipe( plumber( { errorHandler: onError } ) )
     .pipe(sourcemaps.init())
     .pipe( sass() )
+    .pipe(sourcemaps.write({includeContent: false}))
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
     .pipe(sourcemaps.write(themeRoot + '.'))
     .pipe( gulp.dest(themeRoot + '.' ) )
