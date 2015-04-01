@@ -1,4 +1,6 @@
 vendor
+node_modules
+.sass-cache
 
 web/core
 
@@ -7,6 +9,7 @@ web/uploads
 web/apps/languages/*
 
 web/apps/themes/*
+!web/apps/themes/themename
 
 web/apps/plugins/*
 

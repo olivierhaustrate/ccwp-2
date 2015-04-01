@@ -64,7 +64,7 @@ if ( WP_LOCAL_SERVER || WP_DEV_SERVER ) {
 // Custom Content Directory
 // ========================
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/apps' );
-define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/apps' );
+define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/projectfolder/web/apps' );
 // ==========================
 // Move the uploads directory
 // ==========================

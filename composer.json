@@ -43,9 +43,8 @@
 		"johnpbloch/wordpress"                                      : "4.*",
 		"composer/installers"                         	    	   	: "v1.0.19",
 		
-		"koodimonni/composer-dropin-installer"					    : "*",
-						
-		"julianlmedina/modernscores"                 			    : "*"		
+		"koodimonni/composer-dropin-installer"					    : "*"
+			
 	},
 	"extra"       : {
 		"installer-paths": {
