@@ -12,7 +12,14 @@ Installation
  3. Run `composer install` 
  4. Create a `local-config.php` in `/config` with your DB details 
  5. Visit your new install in your browser in order to complete WordPress' installation
- 6. That's it, you're done
+ 6. Grab a fresh copy of _underscores (check sass option) to use as starter theme
+ 7. Edit themename in .bowerrc, gulpfile.js, wp-config.php, .gitignore
+ 8. Run `npm install`
+ 9. Run `bower install` 
+ 10. `@import` susy grid and breakpoint-sass into style.scss
+ 11. `enque_script` in function.php to add Modernizer 
+ 12. Run `gulp` to watch files changes, compile your sass...
+ 7. That's it, you're done
 
 Folders/files structure
 ----------------
@@ -30,11 +37,16 @@ Folders/files structure
     	| |__ core
     	| |__ medias
     	| |__ wp-config.php
+        |__ .bowerrc
     	|__ .gitignore
     	|__ .htaccess
+        |__ .jshintrc
+        |__ bower.json
     	|__ composer.json
     	|__ composer.lock
+        |__ gulpfile.js
     	|__ index.php
+        |__ package.json
     	|__ README.md
 
 
@@ -58,16 +70,6 @@ To easy the scaffolding of WordPress sites, the composer.json comes with the fol
 > This composer plugin helps you to move your composer packaged files where you want them to be. 
 > It was  originally created for installing multiple languages for WordPress with composer.
 
-
-**wp-h5bp-htaccess from *Roots***: https://github.com/roots/wp-h5bp-htaccess
-
-> WordPress plugin that adds HTML5 Boilerplate's .htaccess
-
-Remove this plugin from the `require` list if you are not developing on/for an Apache webserver. 
-
-**modernscores from *Julian Medina***: https://github.com/julianlmedina/Modernscores
-
-> Modernscores is a forked version of Underscores - WordPress starter theme - combined with Sass, the Susy grid system, and Breakpoint.
 
 
 WordPress Must Use (MU) plugins
