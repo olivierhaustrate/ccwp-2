@@ -23,19 +23,7 @@
 		{
           "type": "composer",
           "url": "http://languages.koodimonni.fi"
-        },
-		{
-			"type": "package",
-			"package": {
-				"name": "julianlmedina/modernscores",
-				"type": "wordpress-theme",
-				"version": "1.0",
-				"dist": {
-					"type": "zip",
-					"url": "https://github.com/julianlmedina/Modernscores/archive/master.zip"
-				}
-			}
-		}
+        }
 	],
 	"require"     : {
 	    "php": ">=5.4",
